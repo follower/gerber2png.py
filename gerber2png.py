@@ -326,7 +326,7 @@ class GerberData:
 		arc_resolution = 0.00175
 
 #		if not clockwise:
-		if start_angle > end_angle:
+		if start_angle >= end_angle:
 			end_angle += DOUBLE_PI
 	
 		print("Circle at: [", centerx, ", ", centery, "] Radius:", radius)
